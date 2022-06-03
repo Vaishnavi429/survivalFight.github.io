@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="styleSheet">
+    
+    <title>Shoot Game</title>
+</head>
+
+<body>
+    <div class="gameContainer">
+        <div class="roundNumber">
+            <h1 id="setRound">Round-1</h1>
+        </div>
+        <div class="score">
+            <div class="player1Score ScorePlate">
+                <img src="Image/heart.png" alt="Health" height="20px" width="20px">
+                <p class="player1Health">Health Player-1:100</p>
+            </div>
+            <div class="player2Score ScorePlate">
+                <img src="Image/heart.png" alt="Health" height="20px" width="20px">
+                <p class="player2Health">Health Player-2:100</p>
+            </div>
+        </div>
+        <div class="player1">
+            <button class="shoot-btn isActive" id="player1Score" onclick="HandleShoot(this)">Shoot</button>
+            <h2>Player 1</h2>
+        </div>
+        <div class="player1Image">
+        </div>
+        <div class="player2">
+            <button class="shoot-btn" id="player2Score" onclick="HandleShoot(this)">Shoot</button>
+            <h2>Player 2</h2>
+        </div>
+        <div class="player2Image"></div>
+        <div class="resultBox">
+            <div class="boxCard" id="RoundWinner">
+                <div class="boxCard-header">
+                    Score
+                </div>
+                <div class="boxCard-body">
+                    <p class="card-text">Player 1- Won: 0</p>
+                    <p class="card-text">Player 2- Won: 0</p>
+                    <button class="boxCard-btn" onclick="HandleReset()">Start Game</button>
+                </div>
+            </div>
+            <div class="boxCard" id="cardFinalScore">
+                <div class="boxCard-header">
+                    Game Over
+                </div>
+                <div class="boxCard-body">
+                    <p class="card-text overCardText">Player-1 score:0</p>
+                    <p class="card-text overCardText">Player-2 score:0</p>
+                    <p class="card-text overCardText">Winner Player</p>
+                    <input class="boxCard-btn" type="button" value="Re-play" onclick="history.go(0)">
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

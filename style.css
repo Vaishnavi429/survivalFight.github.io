@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: red;
+}
+
+.gameContainer {
+    background-image: url(Image/battleGround.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.roundNumber {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(28, 28, 26);
+
+}
+
+.score {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.score p {
+    font-size: 1.5em;
+}
+
+.ScorePlate {
+    background: rgb(147, 140, 140);
+    padding: 5px 10px;
+
+}
+
+.player1 {
+    position: absolute;
+    bottom: 29px;
+    left: 125px;
+    z-index: 1;
+}
+
+.player1Image {
+    background-image: url(Image/player1.png);
+    background-repeat: no-repeat;
+    width: 254px;
+    height: 304px;
+    position: absolute;
+    bottom: 70px;
+    left: -21px;
+}
+
+.player2 {
+    position: absolute;
+    bottom: 218px;
+    right: 223px;
+    z-index: 1;
+
+}
+
+.player2Image {
+    background-image: url(Image/player2.png);
+    background-repeat: no-repeat;
+    width: 254px;
+    height: 304px;
+    position: absolute;
+    right: 220px;
+    bottom: 240px;
+
+}
+
+.shoot-btn {
+    border: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    font-family: cursive;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+}
+
+.isActive {
+    box-shadow: 0px 0px 3px 3px rgb(125, 121, 121);
+    background-color: rgb(119, 4, 4);
+}
+
+h2 {
+    color: rgb(199, 179, 29);
+    font-size: 2em;
+}
+
+.resultBox {
+    position: absolute;
+    left: 40%;
+}
+.boxCard{
+    width:70%;
+    text-align:center;
+    display: none;
+    padding: 1em 4em;
+    background: rgb(100, 163, 12);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 8px rgb(163, 158, 158);
+    color: white;
+    font-size: 1.2em;
+    
+}
+.boxCard-header{
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.boxCard-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+.boxCard-btn{
+    padding: 10px 5px;
+    border: none;
+    background: rgb(134, 29, 5);
+    color: white;
+    box-shadow: inset 0px 0px 5px 5px yellow;
+    border-radius: 10px;
+}
+
